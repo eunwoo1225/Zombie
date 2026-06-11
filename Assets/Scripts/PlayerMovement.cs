@@ -22,15 +22,30 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // 물리 갱신 주기마다 움직임, 회전, 애니메이션 처리 실행
+        // 회전 실행
+        Rotate();
+        // 움직임 실행
+        Move();
+
+        // 입력값에 따라 애니메이터의 Move 파라미터값 변경
+        playerAnimator.SetFloat("Move", playerInput.move);
     }
 
     // 입력 값에 따라 캐릭터를 앞뒤로 움직임
     private void Move()
     {
+        // 상대적으로 이동할 거리 계산
+        Vector3 moveDistance = transform.forward * playerInput.move * moveSpeed * Time.deltaTime;
+        // 리지드바디로 게임 오브젝트 위치 변경
+        playerRigidbody.MovePosition(playerRigidbody.position + moveDistance);
     }
 
     // 입력값에 따라 캐릭터를 좌우로 회전
     private void Rotate()
     {
+        // 상대적으로 회전할 수치 계산
+        float turn = playerInput.rotate * rotateSpeed * Time.deltaTime;
+        // 리지드바디를 이용해 게임 오브젝트 회전 변경
+        playerRigidbody.rotation = playerRigidbody.rotation * Quaternion.Euler(0, turn, 0f);
     }
 }
