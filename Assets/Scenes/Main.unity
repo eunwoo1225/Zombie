@@ -216,9 +216,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e185ab1d72dd4af42927564f087d12ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZombieSpawner
-  zombiePrefab: {fileID: 0}
-  zombieDatas: []
-  spawnPoints: []
+  zombiePrefab: {fileID: 4578595360830801013, guid: eabd8ffca3210fa4491f72b12f2f31e3, type: 3}
+  zombieDatas:
+  - {fileID: 11400000, guid: 20f12af932f1eea4fb4c5a46e6a3a868, type: 2}
+  - {fileID: 11400000, guid: db1923afc1daf6848b05dd07f3a04dba, type: 2}
+  - {fileID: 11400000, guid: db84d2f0a58a8e440a90193a858a8fee, type: 2}
+  spawnPoints:
+  - {fileID: 334210941}
+  - {fileID: 334210940}
+  - {fileID: 334210939}
+  - {fileID: 334210938}
 --- !u!4 &176263195
 Transform:
   m_ObjectHideFlags: 0
@@ -407,6 +414,26 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5314e1f0757cf4cf79d58731d117e6cd, type: 3}
+--- !u!4 &334210938 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4984717578414758, guid: 5314e1f0757cf4cf79d58731d117e6cd, type: 3}
+  m_PrefabInstance: {fileID: 334210937}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &334210939 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4821426734562698, guid: 5314e1f0757cf4cf79d58731d117e6cd, type: 3}
+  m_PrefabInstance: {fileID: 334210937}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &334210940 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4008875457194926, guid: 5314e1f0757cf4cf79d58731d117e6cd, type: 3}
+  m_PrefabInstance: {fileID: 334210937}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &334210941 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4786794668291628, guid: 5314e1f0757cf4cf79d58731d117e6cd, type: 3}
+  m_PrefabInstance: {fileID: 334210937}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &460405584 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1852576806548013000, guid: e2f92202ab57c014eb9c9e66e8299ae2, type: 3}
